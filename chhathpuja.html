@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chhath Puja - Wishes With Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="video-bg video-bg-welcome" aria-hidden="true">
+    <video autoplay muted loop playsinline>
+      <source src="video1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-bg video-bg-slide-one" aria-hidden="true">
+    <video autoplay muted loop playsinline>
+      <source src="video2.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-bg video-bg-slide-two" aria-hidden="true">
+    <video autoplay muted loop playsinline>
+      <source src="video3.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-bg video-bg-slide-three" aria-hidden="true">
+    <video autoplay muted loop playsinline>ś
+      <source src="video4.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-bg video-bg-slide-four" aria-hidden="true">
+    <video autoplay muted loop playsinline>
+      <source src="video5.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-bg video-bg-slide-five" aria-hidden="true">
+    <video autoplay muted loop playsinline>
+      <source src="video6.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-bg video-bg-slide-six" aria-hidden="true">
+    <video autoplay muted loop playsinline>
+      <source src="video7.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-bg video-bg-slide-seven" aria-hidden="true">
+    <video autoplay muted loop playsinline>
+      <source src="video8.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="sun"></div>
+  <div class="particles" id="particles"></div>
+
+  <header>
+    <div class="logo">☀ Chhath Puja</div>
+    <button id="musicBtn" onclick="toggleMusic()">♫ Music: OFF</button>
+  </header>
+
+  <audio id="bgMusic" src="chhath.mp3" loop></audio>
+  <audio id="finalMusic" src="wishingmessage.mp3"></audio>
+
+  <main>
+
+    <!-- Welcome -->
+    <section class="slide active" id="slide0">
+      <div class="welcome-content">
+        <div class="emoji">🙏 🌅 🙏</div>
+        <p class="small-title">A Festival of Faith, Purity & Devotion</p>
+        <h1>Happy Chhath Puja</h1>
+        <h2>छठ महापर्व की हार्दिक शुभकामनाएं</h2>
+        <p>
+          May Chhathi Maiya and Surya Dev bless your family
+          with happiness, peace, prosperity and good health.
+        </p>
+        <button class="main-btn" onclick="nextSlide()">Begin Celebration →</button>
+      </div>
+    </section>
+
+    <!-- Slide 1 -->
+    <section class="slide" id="slide1">
+      <span class="number">01 / 07</span>
+      <div class="content">
+        <span class="icon">🌅</span>
+        <h1>What is Chhath Puja?</h1>
+        <h2>छठ महापर्व का महत्व</h2>
+        <p>
+          Chhath Puja is an ancient Hindu festival dedicated to
+          Surya Dev (the Sun God) and Chhathi Maiya.
+          It is celebrated with immense faith, devotion and purity.
+        </p>
+        <p>
+          Devotees express gratitude to the Sun for sustaining
+          life and pray for the happiness and well-being of
+          their families.
+        </p>
+      </div>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide" id="slide2">
+      <span class="number">02 / 07</span>
+      <div class="content">
+        <span class="icon">☀️</span>
+        <h1>Worship of Surya Dev</h1>
+        <h2>सूर्य देव की उपासना</h2>
+        <p>
+          The Sun is the source of light, energy and life.
+          Chhath Puja reminds us to respect nature and be
+          thankful for the blessings it gives us.
+        </p>
+        <p>
+          Devotees offer Arghya to the setting and rising sun
+          with deep devotion and gratitude.
+        </p>
+      </div>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide" id="slide3">
+      <span class="number">03 / 07</span>
+      <div class="content">
+        <span class="icon">🙏</span>
+        <h1>Chhathi Maiya</h1>
+        <h2>छठी मैया का आशीर्वाद</h2>
+        <p>
+          Chhathi Maiya is deeply revered during this festival.
+          Devotees pray for the health, happiness, protection
+          and prosperity of their children and families.
+        </p>
+        <p>
+          The festival represents faith, love, dedication
+          and the power of devotion.
+        </p>
+      </div>
+    </section>
+
+    <!-- Slide 4 -->
+    <section class="slide" id="slide4">
+      <span class="number">04 / 07</span>
+      <div class="content">
+        <span class="icon">🍃</span>
+        <h1>Nahay Khay</h1>
+        <h2>नहाय-खाय</h2>
+        <p>
+          Nahay Khay marks the beginning of the four-day
+          Chhath festival.
+        </p>
+        <p>
+          Devotees take a holy bath, clean their surroundings
+          and prepare a simple, pure meal.
+          It represents cleanliness, discipline and preparation
+          for the sacred celebration.
+        </p>
+      </div>
+    </section>
+
+    <!-- Slide 5 -->
+    <section class="slide" id="slide5">
+      <span class="number">05 / 07</span>
+      <div class="content">
+        <span class="icon">🪔</span>
+        <h1>Kharna</h1>
+        <h2>खरना</h2>
+        <p>
+          Kharna is the second day of Chhath Puja.
+          Devotees observe a day-long fast and worship
+          with sincerity.
+        </p>
+        <p>
+          In the evening, traditional offerings such as
+          kheer and roti are prepared and shared as Prasad.
+          It symbolizes devotion, gratitude and sharing.
+        </p>
+      </div>
+    </section>
+
+    <!-- Slide 6 -->
+    <section class="slide" id="slide6">
+      <span class="number">06 / 07</span>
+      <div class="content">
+        <span class="icon">🌇</span>
+        <h1>Sandhya Arghya</h1>
+        <h2>संध्या अर्घ्य</h2>
+        <p>
+          On the third day, devotees gather at rivers,
+          ponds and other water bodies to offer Arghya
+          to the setting sun.
+        </p>
+        <p>
+          The beautiful sight of diyas, traditional baskets
+          and prayers creates an atmosphere filled with
+          faith and devotion.
+        </p>
+      </div>
+    </section>
+
+    <!-- Slide 7 -->
+    <section class="slide" id="slide7">
+      <span class="number">07 / 07</span>
+      <div class="content">
+        <span class="icon">🌄</span>
+        <h1>Usha Arghya</h1>
+        <h2>उषा अर्घ्य</h2>
+        <p>
+          On the final morning, devotees offer Arghya
+          to the rising sun.
+        </p>
+        <p>
+          It symbolizes new beginnings, hope, positivity
+          and gratitude. After the offering, the fast is
+          traditionally concluded.
+        </p>
+      </div>
+    </section>
+
+    <!-- Final Wish -->
+    <section class="slide" id="slide8">
+      <div class="content final-content">
+        <span class="icon">🌺🙏🌺</span>
+        <h1>Happy Chhath Puja!</h1>
+        <h2>छठ महापर्व की हार्दिक शुभकामनाएं</h2>
+        <p>
+          May the divine blessings of Chhathi Maiya and
+          Surya Dev bring endless happiness, peace,
+          prosperity and good health to you and your family.
+        </p>
+        <h3>With Love & Best Wishes ❤️</h3>
+        <p class="signature">Created with love  of shashi💕</p>
+        <button class="main-btn" onclick="restart()">↻ Watch Again</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Navigation -->
+  <nav class="navigation">
+    <button onclick="previousSlide()">← Previous</button>
+    <span id="slideCounter">Welcome</span>
+    <button onclick="nextSlide()">Next →</button>
+  </nav>
+
+  <!-- Video Overlay -->
+  <div class="video-overlay" id="videoOverlay">
+    <button class="close-video" onclick="closeVideo()">✕</button>
+    <video id="videoPlayer" controls playsinline></video>
+  </div>
+
+  <!-- Music Selector -->
+  <div class="music-panel">
+    <select id="musicSelect" onchange="changeMusic()">
+      <option value="chhath.mp3">Chhath Bhajan 1</option>
+      <option value="music/bhajan2.mp3">Chhath Bhajan 2</option>
+    </select>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
